@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Kumaran Water Suppliers</string>
+    <string name="phone_number_hint">Phone number</string>
+    <string name="password_hint">Password</string>
+    <string name="signinhint">Sign in</string>
+    <string name="title_item_list">Items</string>
+    <string name="title_item_detail">Item Detail</string>
+    <string name="fragment_name">Name:</string>
+    <string name="fragment_time">Time of Calling:</string>
+    <string name="fragment_address">Address:</string>
+    <string name="fragment_delivered">Delivered</string>
+    <string name="fragment_undelivered">Undelivered</string>
+    <string name="fragment_status">Delivery Status  </string>
+    <string name="power">Powered by</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
