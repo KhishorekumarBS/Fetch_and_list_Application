@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<item
+    android:id="@+id/refresh_menu"
+    android:title="Refresh"
+    app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/delivered_menu"
+        android:title="Delivered orders"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/undelivered_menu"
+        android:title="Undelivered orders"
+        app:showAsAction="never"/>
+
+</menu>

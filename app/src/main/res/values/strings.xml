@@ -12,6 +12,12 @@
     <string name="fragment_undelivered">Undelivered</string>
     <string name="fragment_status">Delivery Status  </string>
     <string name="power">Powered by</string>
+    <string name="model1">Nila:</string>
+    <string name="model2">Aquafina:</string>
+    <string name="model3">Bisleri:</string>
+    <string name="fromdate">From:</string>
+    <string name="todate">To:</string>
+    <string name="total">NILA:0    AQUAFINA:0    BISLERI:0</string>
 
 
     <!-- TODO: Remove or change this placeholder text -->

@@ -1,8 +1,12 @@
 package com.vibhaventerprise.watersupplier.watersuppliernew;
 
+import android.content.SharedPreferences;
 import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -27,8 +31,15 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        SharedPreferences pref=getApplicationContext().getSharedPreferences("WaterSupplier",0);
+        String Userid=pref.getString("current_user",null);
+        if(Userid!=null && Userid.equals("999"))
+        {
+            startActivity(new Intent(MainActivity.this,TestActivity.class));
+            finish();
+            System.exit(0);
+        }
         setContentView(R.layout.activity_main);
-
         PhonenumberET =(EditText)findViewById(R.id.phoneno);
         PasswordET =(EditText)findViewById(R.id.password);
 
@@ -56,8 +67,12 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-    private void validate(String phone,String pass) {
+    private void validate(String phone, String pass) {
         if (phone.equals("999") && pass.equals("water")) {
+            SharedPreferences pref=getApplicationContext().getSharedPreferences("WaterSupplier",0);
+            SharedPreferences.Editor editor=pref.edit();
+            editor.putString("current_user",phone);
+            editor.commit();
             startActivity(new Intent(MainActivity.this,TestActivity.class));
 
         }

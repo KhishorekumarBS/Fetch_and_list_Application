@@ -35,7 +35,7 @@ public class DataFetch extends AsyncTask<Void,Void,Void> {
                 data=data +line;
             }
             JA = new JSONArray(data);
-            JB=new JSONArray(data);
+            JB = new JSONArray(data);
            /* for(int i=0;i<JA.length();i++)
             {
                 JSONObject JO =(JSONObject) JA.get(i);

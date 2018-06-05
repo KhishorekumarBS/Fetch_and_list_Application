@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".delivered_fragment"
+    android:id="@+id/record_delivered">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/Nametext"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingRight="35dp"
+                android:text="@string/fragment_name" />
+
+            <TextView
+                android:id="@+id/Timetext"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/fragment_time" />
+
+            <TextView
+                android:id="@+id/addresstext"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/fragment_address" />
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/Model1_done"/>
+
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/Model2_done"/>
+
+
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/Model3_done"/>
+
+        </LinearLayout>
+        <Button
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_margin="5dp"
+            android:id="@+id/callbtn"
+            android:background="@drawable/ic_phone_black_24dp" />
+    </RelativeLayout>
+
+</FrameLayout>
